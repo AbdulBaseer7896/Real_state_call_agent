@@ -1,0 +1,5 @@
+langchain-huggingface
+langchain
+langchain-community
+faiss-cpu
+pandas

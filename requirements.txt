@@ -1,0 +1,12 @@
+fastapi
+twilio
+uvicorn
+requests
+python-dotenv
+openai
+langchain
+langchain-community
+langchain-huggingface
+sentence-transformers
+faiss-cpu
+ultravox-client
