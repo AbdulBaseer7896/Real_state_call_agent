@@ -3,7 +3,7 @@ Call Bot using Ultravox and Twilio. None RAG version is also available
 
 
 
-run the main file with the commond = uvicorn main_norag:app --reload --port 8000
+run the main file with the commond = uvicorn saving_information:app --reload --port 8000
 
 Then run the ngrok with commond = ngrok http 8000
 

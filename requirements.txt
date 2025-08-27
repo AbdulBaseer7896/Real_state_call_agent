@@ -10,3 +10,7 @@ langchain-huggingface
 sentence-transformers
 faiss-cpu
 ultravox-client
+gunicorn
+requests
+dotenv
+pandas
