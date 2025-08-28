@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 # Env config
 ULTRAVOX_API_KEY = os.getenv("ULTRAVOX_API_KEY")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-print("This is the key = " , ULTRAVOX_API_KEY)
+# print("This is the key = " , ULTRAVOX_API_KEY)
 ULTRAVOX_API_URL = "https://api.ultravox.ai/api/calls"
 PORT = int(os.getenv("PORT", 4040))
 BASE_URL = os.getenv("BASE_URL")
@@ -367,6 +367,15 @@ async def handle_incoming_call(request: Request, background_tasks: BackgroundTas
         </Response>
         """
         return Response(content=twiml.strip(), media_type="application/xml")
+
+@app.get("/")
+async def home_get():
+    return {"status": "ok get", "port": PORT}
+
+
+@app.post("/")
+async def home_post():
+    return {"status": "ok post", "port": PORT}
 
 @app.get("/health")
 async def health_check():
